@@ -5,7 +5,9 @@ const HackNews = props => (
   <tr>
     <td>{props.hacknews.by}</td>
     <td>{props.hacknews.title}</td>
-    <td>{props.hacknews.url}</td>
+    <td>
+      <a href={props.hacknews.url}>Link</a>
+    </td>
     <td>{props.hacknews.score}</td>
   </tr>
 );
