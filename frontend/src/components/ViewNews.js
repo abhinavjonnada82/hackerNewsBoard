@@ -19,6 +19,9 @@ export default class ViewNote extends Component {
   }
 
   componentDidMount() {
+    this.refreshList();
+  }
+  refreshList = () => {
     Axios.get("/api/hackernewboards")
       .then(response => {
         this.setState({ news: response.data });
@@ -26,7 +29,7 @@ export default class ViewNote extends Component {
       .catch(function(error) {
         console.log(error);
       });
-  }
+  };
   noteList() {
     return this.state.news.map(function(currentNews, i) {
       return <HackNews hacknews={currentNews} key={i} />;
@@ -37,8 +40,8 @@ export default class ViewNote extends Component {
     return (
       <div>
         <h3>Top 20 stories from Hacker News</h3>
-        <table className="table table-striped" style={{ marginTop: 20 }}>
-          <thead>
+        <table className="table  table-hover" style={{ marginTop: 20 }}>
+          <thead className="thead-dark">
             <tr>
               <th>Author</th>
               <th>Title</th>
