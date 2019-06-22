@@ -30,3 +30,11 @@ Backend:
 Frontend:
 ![Screen Shot 2019-06-22 at 6 00 21 PM](https://user-images.githubusercontent.com/30497847/59969274-b251c300-9517-11e9-8b12-7b0de040b02f.png)
 
+Unit Test:
+Front end
+![Screen Shot 2019-06-22 at 4 34 56 PM](https://user-images.githubusercontent.com/30497847/59969291-03fa4d80-9518-11e9-9e12-658c7bd92b72.png)
+
+Issues:
+-> Need to fix pagination
+-> Need to take care of mongodb authentication in Unit Tests
+
