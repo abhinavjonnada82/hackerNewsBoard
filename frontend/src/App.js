@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ViewNews from "./component/ViewNews";
+
+import ViewNews from "./components/ViewNews";
 
 const img = require("./bg.jpg");
 const divStyle = {
@@ -37,14 +38,8 @@ class App extends Component {
             </div>
           </nav>
           <br />
-          <nav className="navbar fixed-bottom navbar-light bg-light">
-            <a className="navbar-brand" href="#">
-              {" "}
-              ⓒ 2019 Abhinav Jonnada
-            </a>
-          </nav>
 
-          <Route path="/" exact component={ViewNote} />
+          <Route path="/" exact component={ViewNews} />
         </div>
       </Router>
     );
