@@ -9,3 +9,6 @@ class Hackernewboard(models.Model):
 
     def _str_(self):
         return self.title
+
+    def getScoreNBy(self):
+        return self.by + 'holds score of' + self.score
