@@ -12,7 +12,7 @@ def loadData():
     response = requests.get(
         'https://hacker-news.firebaseio.com/v0/topstories.json/')
     hackerData = response.json()
-    for x in range(0, 10):
+    for x in range(0, 20):
         hnIdList.append(hackerData[x])
     while hnIdList:
         storyId = hnIdList.pop()
@@ -26,17 +26,18 @@ def loadData():
         title = data['title']
         url = data['url']
         score = data['score']
-        hackernewboard, created = Hackernewboard.objects.get_or_create(
-            by=by,
-            title=title,
-            url=url,
-            score=score
-        )
-        if created:
-            hackernewboard.save()
+        if title and by not in Hackernewboard.objects.all():
+            hackernewboard, created = Hackernewboard.objects.get_or_create(
+                by=by,
+                title=title,
+                url=url,
+                score=score
+            )
+            if created:
+                hackernewboard.save()
 
 
 class HackernewboardView(viewsets.ModelViewSet):       # add this
     serializer_class = HackernewboardSerializer          # add this
     loadData()
-    queryset = Hackernewboard.objects.all()              # add this
+    queryset = Hackernewboard.objects.all()[:15]       # add this
