@@ -1,6 +1,12 @@
 # hackerNewsBoard
 
 <strong>
+Instructions to run:
+-> Run this command from root to activate virtual environment source my_env/bin/activate
+-> Change directory into backend and run python manage.py runserver
+-> On an another terminal change directory into frontend and run npm install 
+& npm start
+  
 Backend: Python Django 
 -> Grabs list of News ID & News content from HackerNews API
 -> Loads the data into MongoDB
