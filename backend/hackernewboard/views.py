@@ -12,7 +12,7 @@ def loadData():
     response = requests.get(
         'https://hacker-news.firebaseio.com/v0/topstories.json/')
     hackerData = response.json()
-    for x in range(0, 10):
+    for x in range(0, 20):
         hnIdList.append(hackerData[x])
     while hnIdList:
         storyId = hnIdList.pop()
