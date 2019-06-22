@@ -12,7 +12,7 @@ const HackNews = props => (
   </tr>
 );
 
-export default class ViewNote extends Component {
+export default class ViewNews extends Component {
   constructor(props) {
     super(props);
     this.state = { news: [] };
