@@ -31,9 +31,9 @@ Unit Tests:
 -> Frontend - Test sit for axios get request
 </strong>
 
-Backend:
-![Screen Shot 2019-06-22 at 6 00 32 PM](https://user-images.githubusercontent.com/30497847/59969273-b1209600-9517-11e9-8e92-fda9c5fc535e.png)
 Frontend:
+![Screen Shot 2019-06-22 at 6 00 32 PM](https://user-images.githubusercontent.com/30497847/59969273-b1209600-9517-11e9-8e92-fda9c5fc535e.png)
+Backend:
 ![Screen Shot 2019-06-22 at 6 00 21 PM](https://user-images.githubusercontent.com/30497847/59969274-b251c300-9517-11e9-8b12-7b0de040b02f.png)
 
 Unit Test:
