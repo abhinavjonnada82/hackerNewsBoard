@@ -2,25 +2,25 @@
 
 <strong>
 Instructions to run:
--> Run this command from root to activate virtual environment source my_env/bin/activate
--> Change directory into backend and run python manage.py runserver
+-> Run this command from root to activate virtual environment - source my_env/bin/activate
+-> Change directory into backend and run - python manage.py runserver
 -> On an another terminal change directory into frontend and run npm install 
 & npm start
   
 Backend: Python Django 
 -> Grabs list of News ID & News content from HackerNews API
 -> Loads the data into MongoDB
--> Django REST API that exposes endpoints 
+-> Django REST API then exposes endpoints 
 
 Frontend: React JS
--> Performs get request using Axios on exposed endpoint
+-> Performs GET request using Axios on exposed endpoint
 -> Sets the state and maps result into a table
 
 Notable Functions:
 
 -> Backend - loadData():
-Run Time complexity of O(N) for fetching data from APIs and loading them into DB
-Enters only new data into table
+Run Time complexity of O(N) (need to improve!) for fetching data from APIs and loading them into DB.
+Enters only new data into table, skips exisiting data
 
 -> Front end - RefereshList()
 function is called each time an API request is completed. 
